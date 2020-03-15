@@ -1,7 +1,7 @@
 ---
 title: Yarn 2 and Private Repos with Authentication
-date: 2020-03-10T16:00:37.408Z
-draft: true
+date: 2020-03-15T16:00:37.408Z
+draft: false
 ---
 One of the problems I faced recently trying out Yarn 2, was configuring it to authenticate a private repository. The project uses Font Awesome Pro, which requires you to configure their repo in your `.npmrc` file and provide an auth token.
 
