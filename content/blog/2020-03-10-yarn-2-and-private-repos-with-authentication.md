@@ -18,3 +18,10 @@ npmScopes:
     fortawesome:
         "https://npm.fontawesome.com"
 ```
+
+To break down the settings here:
+
+1. **npmScopes**: You need to tell Yarn to use a private registry for a given namespace. In this case, the namespace is `@fontawesome` but as per the Yarn docs we drop the `@` symbol as it's not valid here.
+2. **npmRegistries**: Yarn also needs to know about the authentication for the private registry, so we create a key with the URL of the registry (here omitting the protocol, so it works with both http and https). Nested within this, you can supply the auth token.
+
+Hopefully this might help someone out.
